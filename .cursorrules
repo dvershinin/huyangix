@@ -1,0 +1,10 @@
+# Cursor Rules for this repo
+
+- TEST COMMAND: Run tests via `make test` from the repo root.
+- BUILD COMMAND: Use `make build` to compile the dynamic module before tests when needed.
+- TEST FRAMEWORK: Perl Test::Nginx (tests under `t/*.t`).
+- MODULE PATH: Tests auto-load `build/ngx_http_huyangix_module.so` (override with `HUYANGIX_SO`).
+- DIRECTIVE NAME: Use `huyanginx on;` to enable the module.
+- POLICY: Any code change MUST have a corresponding test that exists or is added; all tests MUST pass.
+- SCOPE: Update existing tests when changing behavior (e.g., directive names); add new tests for new features.
+- NON-INTERACTIVE: Tests must be deterministic and not require manual input.
