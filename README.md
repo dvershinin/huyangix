@@ -51,7 +51,7 @@ http {
         server_name localhost;
 
         location / {
-            huyangix_fun on;
+            huyanginx on;
         }
     }
 }
@@ -60,7 +60,7 @@ http {
 ### Optional directives
 
 ```nginx
-huyangix_fun on;                # Enable the module
+huyanginx on;                               # Enable the module
 huyangix_message_file /path/to/messages.txt;  # Optional: custom messages
 ```
 

@@ -1,0 +1,14 @@
+# Build artifacts
+/build/
+
+# Test::Nginx runtime
+/t/servroot/
+
+# macOS
+.DS_Store
+
+# Editors/IDE
+*.swp
+*.swo
+.idea/
+.vscode/
